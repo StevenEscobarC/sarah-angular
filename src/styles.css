@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom */
+:root{
+  --pastel-pink: #FFB6C1;
+  --soft-pink: #FFC0CB;
+  --hot-pink: #FF69B4;
+  --magenta: #C71585;
+  --lavender: #E6E6FA;
+  --deep-rose: #D6336C;
+}
+
+html,body,#root {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* corazón flotante */
+.heart {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: rotate(-45deg);
+}
+.heart:before,
+.heart:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: var(--soft-pink);
+  border-radius: 50%;
+  position: absolute;
+}
+.heart:before {
+  top: -20px;
+  left: 0;
+}
+.heart:after {
+  left: 20px;
+  top: 0;
+}
+.heart-body {
+  width: 40px;
+  height: 40px;
+  background: var(--soft-pink);
+  transform: rotate(-45deg);
+  border-radius: 6px;
+}
+
+/* boton estilo */
+.btn-romance{
+  @apply px-6 py-3 rounded-2xl font-semibold shadow-md;
+}
