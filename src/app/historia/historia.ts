@@ -13,6 +13,7 @@ import gsap from 'gsap';
       <h2 class="text-3xl font-bold text-pink-600">Nuestra historia</h2>
       <button (click)="goFinal()" class="text-sm text-gray-600 hover:text-pink-500 transition">Saltar a la pregunta</button>
     </div>
+    <br>
 
     <div class="relative w-full h-[440px] flex items-center justify-center">
       <section *ngFor="let paso of pasos; let i = index"
@@ -24,20 +25,19 @@ import gsap from 'gsap';
              class="w-[420px] h-[300px] rounded-3xl object-cover shadow-xl border-4 border-pink-300"
              alt="foto">
         <div class="mt-4 text-center px-4">
-          <p class="text-sm text-gray-600">Paso {{ i + 1 }}</p>
           <h3 class="font-semibold text-2xl text-pink-700 mt-1">{{ paso.titulo }}</h3>
           <p class="text-gray-700 text-base mt-1">{{ paso.texto }}</p>
         </div>
       </section>
     </div>
-
+    <br>
     <div class="mt-8 flex justify-center gap-4">
       <button (click)="prev()" class="bg-white border border-pink-300 text-pink-600 font-semibold py-2 px-6 rounded-full shadow-sm hover:scale-105 transition">Atrás</button>
       <button (click)="next()" class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-8 rounded-full shadow-md transition-all">
-        {{ index < pasos.length - 1 ? 'Siguiente' : 'Ver final ❤️' }}
+        {{ index < pasos.length - 1 ? 'Siguiente' : 'Finalmente ❤️' }}
       </button>
     </div>
-
+    <br>
     <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-2">
       <span *ngFor="let p of pasos; let ii = index" 
             class="w-3 h-3 rounded-full"
@@ -49,9 +49,9 @@ import gsap from 'gsap';
 })
 export class HistoriaComponent implements AfterViewInit {
   pasos = [
-    { img: '/assets/fotosarah1.jpg', titulo: 'Cómo nos conocimos', texto: 'Aquel día en que todo cambió...' },
-    { img: '/assets/fotosarah2.jpg', titulo: 'La primera risa', texto: 'Recuerdo tu risa, me conquistó.' },
-    { img: '/assets/fotosarah3.jpg', titulo: 'Momentos juntos', texto: 'Pequeños momentos que significan todo.' }
+    { img: '/assets/fotosarah4.jpg', titulo: 'Cómo nos conocimos', texto: 'Aquel día en que todo cambió... En el primer instante que te ví supe que eras una mujer espectacular en todos los sentidos. No tarde nada en comprobarlo.' },
+    { img: '/assets/fotosarah5.jpg', titulo: 'El primer beso', texto: 'Recuerdo tu risa, me conquistó... A través de un sistema de puntos que inventamos con la excusa de ganar beneficios, los dos sabíamos exactamente lo que queríamos. Todo sucedió sin forzar nada; fue tan especial el momento que siempre lo guardo en mi corazón.' },
+    { img: '/assets/fotosarah6.jpg', titulo: 'La primera aventura', texto: 'Pequeños momentos que significan todo... Todo salió tan perfecto que parecía irreal. Siento que nos unimos de una manera inexplicable y que compartimos esa conexión tan especial que solo nosotros dos tenemos.' }
   ];
 
   @ViewChildren('cardElem', { read: ElementRef }) cardElems!: QueryList<ElementRef>;

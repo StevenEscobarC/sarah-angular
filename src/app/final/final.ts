@@ -15,11 +15,11 @@ import { Router } from '@angular/router';
   </h1>
 
   <div class="bg-white/70 backdrop-blur-md rounded-3xl shadow-lg border border-pink-200 text-pink-700 text-center space-y-4 p-6 md:p-10 max-w-3xl mx-auto">
-    <p>Desde aquel día que todo comenzó, cada momento ha sido especial, contigo he conocido lo que se siente el verdadero amor.</p>
+    <p>Desde aquel día que nos vimos en persona siento que todo comenzó, cada momento ha sido especial, contigo he conocido lo que se siente el verdadero amor.</p>
     <p>Y aunque esta historia apenas empieza, sé que cada capítulo será aún mejor 💫. Siento que lo puedo lograr todo a tu lado
     y quiero que me des la oportunidad de seguir escribiendo cada página juntos.
     </p>
-    <p>Gracias por acompañarme, por ser mi lugar seguro y mi razón para seguir creando cosas hermosas como esta 💕. <b>GRACIAS POR SER TÚ</b></p>
+    <p>Gracias por acompañarme, por ser mi lugar seguro y mi razón para querer ser un mejor hombre. <br>💕<b>GRACIAS POR SER TÚ</b>💕</p>
   </div>
   <br>
   <button
